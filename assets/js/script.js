@@ -31,7 +31,7 @@ function all() {
       let scroll = $(window).scrollTop(); // スクロール位置
       let windowHeight = $(window).height(); // 画面の高さ
 
-    if (scroll > target - windowHeight + 200 && !$el.hasClass("show" )) {
+    if (scroll > target - windowHeight && !$el.hasClass("show" )) {
       // 一度だけ実行するため hasClass で確認
         $("header").css("background-image", "url(./assets/img/紺色③.png)");
       setTimeout(function(){
