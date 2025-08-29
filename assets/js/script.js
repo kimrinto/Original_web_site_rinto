@@ -288,7 +288,7 @@ $("#index-scene5").on("click", function(){
 });
 
 $("#index-warning").on("click", function(){
-  let place6 = $("#warning-title").offset().top;
+  let place6 = $("#warning-contents1").offset().top;
   $("html,body").animate({scrollTop: place6}, 500);
   $("#overall-0").fadeOut();
 });
