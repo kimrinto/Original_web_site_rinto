@@ -3,9 +3,11 @@ function all() {
   //   $("html,body").animate({scrollTop:0}, 500);
   // });
 
-  $("#every_title").on("click", function(){
-    $("html,body").animate({scrollTop:0}, 500);
-  });
+    $("#every_title").on("click", function(){
+      $("html,body").animate({scrollTop:0}, 500, function(){
+        location.reload();
+      });
+    });
 
   $(window).on("scroll", function () {
     $(".story").each(function () {
